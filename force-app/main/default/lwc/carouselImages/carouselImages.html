@@ -1,0 +1,53 @@
+<template>
+    <div class="slds-carousel">
+        <div class="slds-carousel__stage">
+            
+            <div class="slds-carousel__panels" style="transform:translateX(-0%)" lwc:dom="manual"></div>
+            
+            <footer>
+
+                <template if:true={button_prev_disabled}>
+                    <lightning-button
+                        disabled
+                        label="Previous"
+                        variant="brand"
+                        icon-position="left"
+                        icon-name="utility:chevronleft"
+                    ></lightning-button>
+                </template>
+                <template if:false={button_prev_disabled}>
+                    <lightning-button
+                        label="Previous"
+                        variant="brand"
+                        icon-position="left"
+                        icon-name="utility:chevronleft"
+                        onclick={previous}
+                    ></lightning-button>
+                </template>
+
+                <span class="count">{count}</span>
+
+                <template if:true={button_next_disabled}>
+                    <lightning-button
+                        disabled
+                        label="Next"
+                        variant="brand"
+                        icon-position="right"
+                        icon-name="utility:chevronright"
+                    ></lightning-button>
+                </template>
+                <template if:false={button_next_disabled}>
+                    <lightning-button
+                        label="Next"
+                        variant="brand"
+                        icon-position="right"
+                        icon-name="utility:chevronright"
+                        onclick={next}
+                    ></lightning-button>
+                </template>
+                
+            </footer>
+
+        </div>
+      </div>
+</template>
