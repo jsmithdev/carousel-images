@@ -17,12 +17,22 @@ Create a carousel of images for Salesforce
 ```json
 [
     {
-        title: 'Playing Puppy', 
-        url: 'https://i.imgur.com/IqpHirM.png' 
+        "title": "Playing Puppy", 
+        "url": "https://i.imgur.com/IqpHirM.png" 
     }
 ]
 ```
 
 ## Deploy
 
-You can find sfdx deployment instructions at [sfdx-deploy-instructions](https://github.com/jsmithdev/sfdx-deploy-instructions)
+### Click to Deploy
+
+Select Production/Developer or Sandbox @ [https://component.land?share=jsmithdev%2Fcarousel-images](https://component.land?share=jsmithdev%2Fcarousel-images)
+
+### SFDX Deployment
+
+Instructions can be found @ [https://github.com/jsmithdev/sfdx-deploy-instructions](https://github.com/jsmithdev/sfdx-deploy-instructions)
+
+---
+
+coded while petting a 🐶 by [Jamie Smith](https://jsmith.dev)
